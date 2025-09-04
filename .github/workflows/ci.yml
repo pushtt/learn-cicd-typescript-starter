@@ -40,6 +40,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Style
         run: npm run format:check
 
